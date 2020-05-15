@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceacc726-3081-4946-9378-e7795432ed34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RandomGenerator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Apuestas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apuestas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RandomGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RandomGenerator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +69,9 @@
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -185,7 +188,12 @@
       <workItem from="1588268329361" duration="4654000" />
       <workItem from="1589238572577" duration="1567000" />
       <workItem from="1589246050994" duration="162000" />
-      <workItem from="1589311292828" duration="5466000" />
+      <workItem from="1589311292828" duration="6863000" />
+      <workItem from="1589475847107" duration="3512000" />
+      <workItem from="1589481918548" duration="20000" />
+      <workItem from="1589481948950" duration="3433000" />
+      <workItem from="1589486084690" duration="2152000" />
+      <workItem from="1589501967574" duration="2125000" />
     </task>
     <task id="LOCAL-00001" summary="Analisis de estrategias">
       <created>1588112265158</created>
@@ -201,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588112521872</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="GCL">
+      <created>1589320424655</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589320424655</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,21 +225,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Analisis de estrategias" />
     <MESSAGE value="fix error apuesta simple" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix error apuesta simple" />
+    <MESSAGE value="GCL" />
+    <option name="LAST_COMMIT_MESSAGE" value="GCL" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586455452935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586455452935" />
-    <state x="820" y="121" key="CommitChangelistDialog2" timestamp="1588112521167">
+    <state x="820" y="121" key="CommitChangelistDialog2" timestamp="1589320423895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="820" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588112521167" />
-    <state x="954" y="387" width="440" height="457" key="FileChooserDialogImpl" timestamp="1588283915339">
+    <state x="820" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589320423895" />
+    <state x="954" y="387" width="440" height="457" key="FileChooserDialogImpl" timestamp="1589482713725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="954" y="387" width="440" height="457" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588283915339" />
+    <state x="954" y="387" width="440" height="457" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589482713725" />
     <state width="1877" height="24" key="GridCell.Tab.0.bottom" timestamp="1588094231662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -261,10 +277,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587585365805" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588112528401">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589320430545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588112528401" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589320430545" />
     <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586455136558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

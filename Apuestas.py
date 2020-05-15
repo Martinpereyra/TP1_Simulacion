@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def rollRuleta():
+    random.seed()
     roll = random.randint(0, 37)
 
     if roll == 0:
@@ -14,7 +15,7 @@ def rollRuleta():
 
 
 def apuesta_simple(fondos, apuesta_inicial, numero_apuestas):
-    global contador_quiebra_simple, profit_simple
+    global contador_quiebra_simple, profit_simple, contador_profit_simple
     value = fondos
     apuesta = apuesta_inicial
     wX = []
@@ -41,11 +42,12 @@ def apuesta_simple(fondos, apuesta_inicial, numero_apuestas):
         color = 'r'
     else:
         color = 'g'
-    plt.plot(wX, vY,color)
+        contador_profit_simple += 1
+    plt.plot(wX, vY, color, linewidth=0.5)
 
 
 def apuesta_martingala(fondos, apuesta_inicial, numero_apuestas):
-    global contador_quiebra_martingala, profit_martingala
+    global contador_quiebra_martingala, profit_martingala, contador_profit_martingala
     value = fondos
     wX = []
     vY = []
@@ -95,11 +97,12 @@ def apuesta_martingala(fondos, apuesta_inicial, numero_apuestas):
         color = 'r'
     else:
         color = 'g'
-    plt.plot(wX, vY,color)
+        contador_profit_martingala += 1
+    plt.plot(wX, vY, color, linewidth=0.5)
 
 
 def dAlembert(fondos, apuesta_inicial, numero_apuestas):
-    global contador_quiebra_dalembert, profit_dalembert
+    global contador_quiebra_dalembert, profit_dalembert, contador_profit_dalembert
     value = fondos
     wX = []
     vY = []
@@ -151,7 +154,8 @@ def dAlembert(fondos, apuesta_inicial, numero_apuestas):
         color = 'r'
     else:
         color = 'g'
-    plt.plot(wX, vY,color)
+        contador_profit_dalembert += 1
+    plt.plot(wX, vY, color, linewidth=0.5)
 
 
 
@@ -160,15 +164,36 @@ def dAlembert(fondos, apuesta_inicial, numero_apuestas):
 
 # MAIN SECTION
 
-
-numero_apostadores = 100
-maximo_apuestas = 5000
+numero_apostadores = 1000
+maximo_apuestas = 10000
 fondo_inicial = 10000
 valor_apuesta = 1000
+
+
+# APUESTA SIMPLE
+
+contador_quiebra_simple = 0
+contador_profit_simple = 0
+profit_simple = 0
+y = 0
+while y < numero_apostadores:
+    apuesta_simple(fondo_inicial, valor_apuesta, maximo_apuestas)
+    y += 1
+
+print('Probabilidad de quiebra apuesta simple:', (contador_quiebra_simple / float(y)) * 100,'%')
+print('Probabilidad de obtener beneficio utilizando apuesta simple:', (contador_profit_simple / float(y)) * 100,'%')
+print("Apuesta simple",((fondo_inicial*numero_apostadores) - profit_simple)*0.00001)
+
+plt.axhline(fondo_inicial, color='r')
+plt.ylabel('Fondos')
+plt.xlabel('Numero de apuesta')
+plt.title('Estrategia Apuesta simple')
+plt.show()
 
 # APOSTANDO CON MARTINGALA
 
 contador_quiebra_martingala = 0
+contador_profit_martingala = 0
 profit_martingala = 0
 x = 0
 while x < numero_apostadores:
@@ -176,35 +201,21 @@ while x < numero_apostadores:
     x += 1
 
 print('Probabilidad de quiebra utlizando martingala:', (contador_quiebra_martingala / float(x)) * 100)
-print('Probabilidad de sobrevivir utilizando martingala:', 100 - ((contador_quiebra_martingala / float(x)) * 100))
-
-plt.axhline(10000, color='r')
+print('Probabilidad de obtener beneficio utilizando martingala:', (contador_profit_martingala / float(x)) * 100)
+print("Beneficio Martingala",((fondo_inicial*numero_apostadores) - profit_martingala)*0.00001)
+plt.axhline(fondo_inicial, color='r')
 plt.ylabel('Fondos')
 plt.xlabel('Numero de apuesta')
 plt.title('Estrategia Martingala')
 plt.show()
 
-# APUESTA SIMPLE
 
-contador_quiebra_simple = 0
-profit_simple = 0
-y = 0
-while y < numero_apostadores:
-    apuesta_simple(fondo_inicial, valor_apuesta, maximo_apuestas)
-    y += 1
 
-print('Probabilidad de quiebra apuesta simple:', (contador_quiebra_simple / float(y)) * 100)
-print('Probabilidad de sobrevivir apuesta simple:', 100 - ((contador_quiebra_simple / float(y)) * 100))
-
-plt.axhline(10000, color='r')
-plt.ylabel('Fondos')
-plt.xlabel('Numero de apuesta')
-plt.title('Estrategia Apuesta simple')
-plt.show()
 
 # APOSTANDO CON D'ALEMBERT
 
 contador_quiebra_dalembert = 0
+contador_profit_dalembert = 0
 profit_dalembert = 0
 z = 0
 while z < numero_apostadores:
@@ -212,17 +223,10 @@ while z < numero_apostadores:
     z+=1
 
 print('Probabilidad de quiebra dAlembert:', (contador_quiebra_dalembert / float(z)) * 100)
-print('Probabilidad de sobrevivir dAlembert:', 100 - ((contador_quiebra_dalembert / float(z)) * 100))
-
-plt.axhline(10000, color='r')
+print('Probabilidad de obtener beneficio utilizando DAlembert:', (contador_profit_dalembert / float(z)) * 100)
+print("Beneficio DAlembert",((fondo_inicial*numero_apostadores) - profit_dalembert)*0.00001)
+plt.axhline(fondo_inicial, color='r')
 plt.ylabel('Fondos')
 plt.xlabel('Numero de apuesta')
 plt.title('Estrategia DAlembert')
 plt.show()
-
-print("Capital de entrada",(fondo_inicial*numero_apostadores))
-print("Beneficios obtenidos por cada estrategia: ")
-print("Apuesta simple",((fondo_inicial*numero_apostadores) - profit_simple))
-print("Martingala",((fondo_inicial*numero_apostadores) - profit_martingala))
-print("DAlembert",((fondo_inicial*numero_apostadores) - profit_dalembert))
-
