@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ceacc726-3081-4946-9378-e7795432ed34" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Apuestas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apuestas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RandomGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RandomGenerator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,9 +68,6 @@
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -194,6 +190,9 @@
       <workItem from="1589481948950" duration="3433000" />
       <workItem from="1589486084690" duration="2152000" />
       <workItem from="1589501967574" duration="2125000" />
+      <workItem from="1589504961020" duration="1062000" />
+      <workItem from="1589557065235" duration="502000" />
+      <workItem from="1589557697699" duration="6473000" />
     </task>
     <task id="LOCAL-00001" summary="Analisis de estrategias">
       <created>1588112265158</created>
@@ -216,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589320424655</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="minor fixes">
+      <created>1589505041221</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589505041221</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor lcg function, bitmap solved">
+      <created>1589505079303</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589505079303</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,61 +239,63 @@
     <MESSAGE value="Analisis de estrategias" />
     <MESSAGE value="fix error apuesta simple" />
     <MESSAGE value="GCL" />
-    <option name="LAST_COMMIT_MESSAGE" value="GCL" />
+    <MESSAGE value="minor fixes" />
+    <MESSAGE value="refactor lcg function, bitmap solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor lcg function, bitmap solved" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586455452935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586455452935" />
-    <state x="820" y="121" key="CommitChangelistDialog2" timestamp="1589320423895">
+    <state x="820" y="121" key="CommitChangelistDialog2" timestamp="1589505078670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="820" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589320423895" />
+    <state x="820" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589505078670" />
     <state x="954" y="387" width="440" height="457" key="FileChooserDialogImpl" timestamp="1589482713725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="954" y="387" width="440" height="457" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589482713725" />
-    <state width="1877" height="24" key="GridCell.Tab.0.bottom" timestamp="1588094231662">
+    <state width="1877" height="24" key="GridCell.Tab.0.bottom" timestamp="1589558813035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="24" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588094231662" />
-    <state width="1877" height="24" key="GridCell.Tab.0.center" timestamp="1588094231662">
+    <state width="1877" height="24" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589558813035" />
+    <state width="1877" height="24" key="GridCell.Tab.0.center" timestamp="1589558813035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="24" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588094231662" />
-    <state width="1877" height="24" key="GridCell.Tab.0.left" timestamp="1588094231662">
+    <state width="1877" height="24" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589558813035" />
+    <state width="1877" height="24" key="GridCell.Tab.0.left" timestamp="1589558813034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="24" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588094231662" />
-    <state width="1877" height="24" key="GridCell.Tab.0.right" timestamp="1588094231662">
+    <state width="1877" height="24" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589558813034" />
+    <state width="1877" height="24" key="GridCell.Tab.0.right" timestamp="1589558813035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="24" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588094231662" />
-    <state width="1877" height="24" key="GridCell.Tab.1.bottom" timestamp="1588094231662">
+    <state width="1877" height="24" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589558813035" />
+    <state width="1877" height="24" key="GridCell.Tab.1.bottom" timestamp="1589558813035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="24" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588094231662" />
-    <state width="1877" height="24" key="GridCell.Tab.1.center" timestamp="1588094231662">
+    <state width="1877" height="24" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589558813035" />
+    <state width="1877" height="24" key="GridCell.Tab.1.center" timestamp="1589558813035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="24" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588094231662" />
-    <state width="1877" height="24" key="GridCell.Tab.1.left" timestamp="1588094231662">
+    <state width="1877" height="24" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589558813035" />
+    <state width="1877" height="24" key="GridCell.Tab.1.left" timestamp="1589558813035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="24" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588094231662" />
-    <state width="1877" height="24" key="GridCell.Tab.1.right" timestamp="1588094231662">
+    <state width="1877" height="24" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589558813035" />
+    <state width="1877" height="24" key="GridCell.Tab.1.right" timestamp="1589558813035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="24" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588094231662" />
+    <state width="1877" height="24" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589558813035" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1587585365805">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587585365805" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589320430545">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589505088428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589320430545" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589505088428" />
     <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586455136558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -293,5 +308,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untitled$Ruleta.coverage" NAME="Ruleta Coverage Results" MODIFIED="1587585868489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled$Apuestas.coverage" NAME="Apuestas Coverage Results" MODIFIED="1588093942642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled$RandomGenerator.coverage" NAME="RandomGenerator Coverage Results" MODIFIED="1589558808438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

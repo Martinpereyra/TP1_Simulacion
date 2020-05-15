@@ -1,6 +1,10 @@
 import pylab as plt
 import numpy as np
-import scipy as sci
+from scipy import stats
+import pandas as pd
+
+#Global variables
+
 
 
 # LCG Implementation
@@ -14,22 +18,23 @@ def lcg(a, c, m, initial_seed):
 
 def random_sample(n, seed = 1103603443773377):
     sample = []
-    global sum
     varAux = lcg(1103590199, 419329, (2**32), seed)
     for i in range(n):
         observation = next(varAux) / (2**32)
-        sum += observation
         sample.append(observation)
 
     return sample
 
 #Test to LCG
+def mean(data):
+    sum = 0
+    for i in data:
+        sum+=i
+    return sum/len(data)
 
-def
+def test_kolmogorov(data, size):
 
-
-
-
+    return data
 
 
 
@@ -42,3 +47,30 @@ def plot_bitmap():
     U = np.random.random((500, 500))   # Test data
     plt.imshow(U, cmap='gray', interpolation='nearest')
     plt.show()
+
+
+
+#Main section
+sample_size = 100000
+data = np.array(random_sample(sample_size))
+print(mean(data))
+
+
+# Standby things
+
+# df = pd.DataFrame({
+#     'i': [],
+#     'F(Xi)': [],
+#     'i/n': [],
+#     'i/n - F(Xi)': [],
+#     'F(Xi) – (i-1)/n': []
+# })
+
+# df1 = pd.DataFrame({
+#     'i': [i],
+#     'F(Xi)': [f],
+#     'i/n': [i_n],
+#     'i/n - F(Xi)': [infx],
+#     'F(Xi) – (i-1)/n': [fxi]
+# })
+# df = df.append(df1, ignore_index=True)
