@@ -26,15 +26,17 @@ def random_sample(n, seed = 1103603443773377):
     return sample
 
 #Test to LCG
+
 def mean(data):
-    sum = 0
-    for i in data:
-        sum+=i
-    return sum/len(data)
+    return np.mean(data)
 
-def test_kolmogorov(data, size):
+def test_kolmogorov(data):
+    return stats.kstest(data, 'uniform')
 
-    return data
+
+# def test_chisquare(data, intervals):
+
+
 
 
 
@@ -51,9 +53,10 @@ def plot_bitmap():
 
 
 #Main section
-sample_size = 100000
+sample_size = 40
 data = np.array(random_sample(sample_size))
 print(mean(data))
+print(test_kolmogorov(data))
 
 
 # Standby things
