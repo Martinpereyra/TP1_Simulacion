@@ -127,9 +127,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pyaux" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyaux.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.RandomGenerator" />
+        <item itemvalue="Python.pyaux" />
         <item itemvalue="Python.Apuestas" />
         <item itemvalue="Python.Ruleta" />
       </list>
@@ -194,7 +214,9 @@
       <workItem from="1589557065235" duration="502000" />
       <workItem from="1589557697699" duration="6603000" />
       <workItem from="1589566047147" duration="7328000" />
-      <workItem from="1589578140300" duration="2192000" />
+      <workItem from="1589578140300" duration="2231000" />
+      <workItem from="1589596725399" duration="1079000" />
+      <workItem from="1589659604816" duration="5459000" />
     </task>
     <task id="LOCAL-00001" summary="Analisis de estrategias">
       <created>1588112265158</created>
@@ -238,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589565906492</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactor">
+      <created>1589580351636</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589580351636</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,21 +280,22 @@
     <MESSAGE value="minor fixes" />
     <MESSAGE value="refactor lcg function, bitmap solved" />
     <MESSAGE value="mean test" />
-    <option name="LAST_COMMIT_MESSAGE" value="mean test" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586455452935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586455452935" />
-    <state x="820" y="121" key="CommitChangelistDialog2" timestamp="1589565905828">
+    <state x="820" y="121" key="CommitChangelistDialog2" timestamp="1589580350836">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="820" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589565905828" />
-    <state x="954" y="387" width="440" height="457" key="FileChooserDialogImpl" timestamp="1589482713725">
+    <state x="820" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589580350836" />
+    <state x="1024" y="372" width="440" height="457" key="FileChooserDialogImpl" timestamp="1589666174819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="954" y="387" width="440" height="457" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589482713725" />
+    <state x="1024" y="372" width="440" height="457" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589666174819" />
     <state width="1877" height="24" key="GridCell.Tab.0.bottom" timestamp="1589565988398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -302,10 +332,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589578462483" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589566427974">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589580365610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589566427974" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589580365610" />
     <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586455136558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
