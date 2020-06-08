@@ -162,63 +162,67 @@ def plot_bitmap():
 
 
 # Main section
-seed = 4294966661
-sample_size = 10
-LcgData1 = np.array(random_sample(sample_size, seed))
-np.random.seed(seed)
-PyData1 = np.random.random(sample_size)
 
 
-seed = 4294950
-sample_size = 100
-LcgData2 = np.array(random_sample(sample_size, seed))
-np.random.seed(seed)
-PyData2 = np.random.random(sample_size)
+if __name__ == "__main__":
+
+    seed = 4294966661
+    sample_size = 10
+    LcgData1 = np.array(random_sample(sample_size, seed))
+    np.random.seed(seed)
+    PyData1 = np.random.random(sample_size)
 
 
-seed = 1103590199
-sample_size = 1000
-LcgData3 = np.array(random_sample(sample_size, seed))
-np.random.seed(seed)
-PyData3 = np.random.random(sample_size)
+    seed = 4294950
+    sample_size = 100
+    LcgData2 = np.array(random_sample(sample_size, seed))
+    np.random.seed(seed)
+    PyData2 = np.random.random(sample_size)
 
 
-#Tabla promedio entre dos distribuciones
-
-print('Promedio 1:  LCG: ', mean(LcgData1),' Py: ',mean(PyData1))
-print('Promedio 2:  LCG: ', mean(LcgData2),' Py: ',mean(PyData2))
-print('Promedio 3:  LCG: ', mean(LcgData3),' Py: ',mean(PyData3))
-print('')
-
-#Tabla kolmogorov
-
-print('Kolmo 1:  LCG: ', test_kolmogorov(LcgData1, len(LcgData1)),' Py: ',test_kolmogorov(PyData1, len(PyData1)))
-print('Kolmo 2:  LCG: ', test_kolmogorov(LcgData2, len(LcgData2)),' Py: ',test_kolmogorov(PyData2, len(PyData2)))
-print('Kolmo 3:  LCG: ', test_kolmogorov(LcgData3, len(LcgData3)),' Py: ',test_kolmogorov(PyData3, len(PyData3)))
-print('')
-# Tabla chi2
-print('')
-chi2, p, _, alpha = test_chisquare(LcgData1, 10)
-print('Chisquare LCG 1: chi2: ', chi2, ' p: ', p, ' alpha: ', alpha)
-chi2, p, _, alpha = test_chisquare(PyData1, 10)
-print('Chisquare PY 1: chi2: ', chi2, ' p: ', p, ' alpha: ', alpha)
-print('')
-chi2, p, _, alpha = test_chisquare(LcgData2, 10)
-print('Chisquare LCG 2: chi2: ', chi2, ' p: ', p, ' alpha: ', alpha)
-chi2, p, _, alpha = test_chisquare(PyData2, 10)
-print('Chisquare PY 2: chi2: ', chi2, ' p: ', p, ' alpha: ', alpha)
-print('')
-chi2, p, _, alpha = test_chisquare(LcgData3, 10)
-print('Chisquare LCG 3: chi2: ', chi2, ' p: ', p, ' alpha: ', alpha)
-chi2, p, _, alpha = test_chisquare(PyData3, 10)
-print('Chisquare PY 3: chi2: ', chi2, ' p: ', p, ' alpha: ', alpha)
+    seed = 1103590199
+    sample_size = 1000
+    LcgData3 = np.array(random_sample(sample_size, seed))
+    np.random.seed(seed)
+    PyData3 = np.random.random(sample_size)
 
 
-#Spectral test
-test_spectral()
-test_spectral_three()
+    #Tabla promedio entre dos distribuciones
 
-#Bitmap
-plot_bitmap()
+    print('Promedio 1:  LCG: ', mean(LcgData1),' Py: ',mean(PyData1))
+    print('Promedio 2:  LCG: ', mean(LcgData2),' Py: ',mean(PyData2))
+    print('Promedio 3:  LCG: ', mean(LcgData3),' Py: ',mean(PyData3))
+    print('')
+
+    #Tabla kolmogorov
+
+    print('Kolmo 1:  LCG: ', test_kolmogorov(LcgData1, len(LcgData1)),' Py: ',test_kolmogorov(PyData1, len(PyData1)))
+    print('Kolmo 2:  LCG: ', test_kolmogorov(LcgData2, len(LcgData2)),' Py: ',test_kolmogorov(PyData2, len(PyData2)))
+    print('Kolmo 3:  LCG: ', test_kolmogorov(LcgData3, len(LcgData3)),' Py: ',test_kolmogorov(PyData3, len(PyData3)))
+    print('')
+    # Tabla chi2
+    print('')
+    chi2, p, _, alpha = test_chisquare(LcgData1, 10)
+    print('Chisquare LCG 1: chi2: ', chi2, ' p: ', p, ' alpha: ', alpha)
+    chi2, p, _, alpha = test_chisquare(PyData1, 10)
+    print('Chisquare PY 1: chi2: ', chi2, ' p: ', p, ' alpha: ', alpha)
+    print('')
+    chi2, p, _, alpha = test_chisquare(LcgData2, 10)
+    print('Chisquare LCG 2: chi2: ', chi2, ' p: ', p, ' alpha: ', alpha)
+    chi2, p, _, alpha = test_chisquare(PyData2, 10)
+    print('Chisquare PY 2: chi2: ', chi2, ' p: ', p, ' alpha: ', alpha)
+    print('')
+    chi2, p, _, alpha = test_chisquare(LcgData3, 10)
+    print('Chisquare LCG 3: chi2: ', chi2, ' p: ', p, ' alpha: ', alpha)
+    chi2, p, _, alpha = test_chisquare(PyData3, 10)
+    print('Chisquare PY 3: chi2: ', chi2, ' p: ', p, ' alpha: ', alpha)
+
+
+    #Spectral test
+    test_spectral()
+    test_spectral_three()
+
+    #Bitmap
+    plot_bitmap()
 
 

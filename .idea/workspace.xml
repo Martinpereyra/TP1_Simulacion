@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceacc726-3081-4946-9378-e7795432ed34" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DistributionGenerator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Apuestas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Apuestas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RandomGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RandomGenerator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,7 @@
       <recent name="C:\Users\tinch\Desktop\UTN2020\Simulacion" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.RandomGenerator">
+  <component name="RunManager" selected="Python.DistributionGenerator">
     <configuration name="Apuestas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -64,10 +66,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="DistributionGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DistributionGenerator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="RandomGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -131,6 +155,9 @@
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -148,9 +175,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DistributionGenerator" />
+        <item itemvalue="Python.Apuestas" />
         <item itemvalue="Python.RandomGenerator" />
         <item itemvalue="Python.pyaux" />
-        <item itemvalue="Python.Apuestas" />
         <item itemvalue="Python.Ruleta" />
       </list>
     </recent_temporary>
@@ -216,7 +244,11 @@
       <workItem from="1589566047147" duration="7328000" />
       <workItem from="1589578140300" duration="2231000" />
       <workItem from="1589596725399" duration="1079000" />
-      <workItem from="1589659604816" duration="5459000" />
+      <workItem from="1589659604816" duration="6538000" />
+      <workItem from="1589982743071" duration="3452000" />
+      <workItem from="1590586098632" duration="4152000" />
+      <workItem from="1591645776396" duration="780000" />
+      <workItem from="1591646624594" duration="3887000" />
     </task>
     <task id="LOCAL-00001" summary="Analisis de estrategias">
       <created>1588112265158</created>
@@ -267,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589580351636</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Final version of test">
+      <created>1589668266835</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589668266835</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,21 +320,22 @@
     <MESSAGE value="refactor lcg function, bitmap solved" />
     <MESSAGE value="mean test" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="Final version of test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final version of test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586455452935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586455452935" />
-    <state x="820" y="121" key="CommitChangelistDialog2" timestamp="1589580350836">
+    <state x="820" y="121" key="CommitChangelistDialog2" timestamp="1589668265728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="820" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589580350836" />
-    <state x="1024" y="372" width="440" height="457" key="FileChooserDialogImpl" timestamp="1589666174819">
+    <state x="820" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589668265728" />
+    <state x="1024" y="372" width="440" height="457" key="FileChooserDialogImpl" timestamp="1590589171263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1024" y="372" width="440" height="457" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589666174819" />
+    <state x="1024" y="372" width="440" height="457" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590589171263" />
     <state width="1877" height="24" key="GridCell.Tab.0.bottom" timestamp="1589565988398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -332,10 +372,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589578462483" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589580365610">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589668274532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589580365610" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589668274532" />
     <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1586455136558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

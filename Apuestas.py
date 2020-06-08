@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 def rollRuleta():
     random.seed()
-    roll = random.randint(0, 37)
+    roll = random.randint(0, 36)
 
     if roll == 0:
         return False
@@ -165,11 +165,11 @@ def dAlembert(fondos, apuesta_inicial, numero_apuestas):
 # MAIN SECTION
 
 numero_apostadores = 1000
-maximo_apuestas = 10000
+maximo_apuestas = 60
 fondo_inicial = 10000
 valor_apuesta = 1000
 
-
+#print("Beneficio del casino usando apuesta simple",((fondo_inicial*numero_apostadores) - profit_simple)*0.00001,'%')
 # APUESTA SIMPLE
 
 contador_quiebra_simple = 0
@@ -182,8 +182,8 @@ while y < numero_apostadores:
 
 print('Probabilidad de quiebra apuesta simple:', (contador_quiebra_simple / float(y)) * 100,'%')
 print('Probabilidad de obtener beneficio utilizando apuesta simple:', (contador_profit_simple / float(y)) * 100,'%')
-print("Apuesta simple",((fondo_inicial*numero_apostadores) - profit_simple)*0.00001)
-
+print("Beneficio del casino usando apuesta simple2",((fondo_inicial*numero_apostadores) - profit_simple)*0.00001,'%')
+print('_________________________________________________________________________________')
 plt.axhline(fondo_inicial, color='r')
 plt.ylabel('Fondos')
 plt.xlabel('Numero de apuesta')
@@ -202,7 +202,8 @@ while x < numero_apostadores:
 
 print('Probabilidad de quiebra utlizando martingala:', (contador_quiebra_martingala / float(x)) * 100)
 print('Probabilidad de obtener beneficio utilizando martingala:', (contador_profit_martingala / float(x)) * 100)
-print("Beneficio Martingala",((fondo_inicial*numero_apostadores) - profit_martingala)*0.00001)
+print("Beneficio del casino usando Martingala",((fondo_inicial*numero_apostadores) - profit_martingala)*0.00001,'%')
+print('_________________________________________________________________________________')
 plt.axhline(fondo_inicial, color='r')
 plt.ylabel('Fondos')
 plt.xlabel('Numero de apuesta')
@@ -224,7 +225,8 @@ while z < numero_apostadores:
 
 print('Probabilidad de quiebra dAlembert:', (contador_quiebra_dalembert / float(z)) * 100)
 print('Probabilidad de obtener beneficio utilizando DAlembert:', (contador_profit_dalembert / float(z)) * 100)
-print("Beneficio DAlembert",((fondo_inicial*numero_apostadores) - profit_dalembert)*0.00001)
+print("Beneficio del casino usando DAlembert",((fondo_inicial*numero_apostadores) - profit_dalembert)*0.00001,'%')
+print('_________________________________________________________________________________')
 plt.axhline(fondo_inicial, color='r')
 plt.ylabel('Fondos')
 plt.xlabel('Numero de apuesta')
