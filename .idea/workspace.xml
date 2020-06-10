@@ -4,7 +4,6 @@
     <list default="true" id="ceacc726-3081-4946-9378-e7795432ed34" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DistributionGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/DistributionGenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/RandomGenerator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +247,7 @@
       <workItem from="1590586098632" duration="4152000" />
       <workItem from="1591645776396" duration="780000" />
       <workItem from="1591646624594" duration="7364000" />
-      <workItem from="1591722263892" duration="5310000" />
+      <workItem from="1591722263892" duration="13568000" />
     </task>
     <task id="LOCAL-00001" summary="Analisis de estrategias">
       <created>1588112265158</created>
@@ -313,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591652751759</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixing normal generator, adding poisson generator">
+      <created>1591727960639</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1591727960639</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,21 +335,22 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="Final version of test" />
     <MESSAGE value="Adding Distribution generator and fixing random ganerator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Distribution generator and fixing random ganerator" />
+    <MESSAGE value="Fixing normal generator, adding poisson generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing normal generator, adding poisson generator" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586455452935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586455452935" />
-    <state x="820" y="121" key="CommitChangelistDialog2" timestamp="1591652750634">
+    <state x="820" y="121" key="CommitChangelistDialog2" timestamp="1591727959629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="820" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591652750634" />
-    <state x="1024" y="372" width="440" height="457" key="FileChooserDialogImpl" timestamp="1591655827597">
+    <state x="820" y="121" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1591727959629" />
+    <state x="1024" y="372" width="440" height="457" key="FileChooserDialogImpl" timestamp="1591746906309">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1024" y="372" width="440" height="457" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591655827597" />
+    <state x="1024" y="372" width="440" height="457" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591746906309" />
     <state width="1877" height="160" key="GridCell.Tab.0.bottom" timestamp="1591726568070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -376,14 +383,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="160" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591726568070" />
+    <state x="1013" y="254" key="RollbackChangesDialog" timestamp="1591727861918">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1013" y="254" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591727861918" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1589578462483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589578462483" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1591652757451">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1591727966289">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591652757451" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591727966289" />
     <state width="968" height="527" key="XDebugger.FullValuePopup" timestamp="1591725847918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
